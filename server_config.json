@@ -8,7 +8,8 @@
     "settings": {
       "method": "chacha20-poly1305",
       "ota": true, 
-      "password": "xyz123456"
+      "password": "xyz123456",
+      "network": "tcp,udp"
     },
     "streamSettings": {
       "network": "ws"
