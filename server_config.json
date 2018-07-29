@@ -1,17 +1,14 @@
 {
   "log": {
-    "loglevel": "warning"
+    "loglevel": "debug"
   },
   "inbound": {
-    "protocol": "vmess",
-    "port": 66666,
+    "port": 66666
+    "protocol": "shadowsocks",
     "settings": {
-      "clients": [
-        {
-          "id": "your_uuid",
-          "alterId": 64
-        }
-      ]
+      "method": "chacha20-poly1305",
+      "ota": true, 
+      "password": "xyz123456"
     },
     "streamSettings": {
       "network": "ws"
