@@ -3,7 +3,7 @@
     "loglevel": "debug"
   },
   "inbound": {
-    "port": 66666
+    "port": 66666,
     "protocol": "shadowsocks",
     "settings": {
       "method": "chacha20-poly1305",
