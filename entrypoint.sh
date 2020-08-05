@@ -1,20 +1,10 @@
-cd /v2raybin
-if [ "$VER" = "latest" ]; then
-  wget http://storage.googleapis.com/v2ray-docker/v2ray 
-  wget http://storage.googleapis.com/v2ray-docker/v2ctl
-  wget http://storage.googleapis.com/v2ray-docker/geoip.dat
-  wget http://storage.googleapis.com/v2ray-docker/geosite.dat
-else
-  wget -O v2ray.zip http://github.com/v2ray/v2ray-core/releases/download/v$VER/v2ray-linux-64.zip
-  unzip v2ray.zip 
-  mv /v2raybin/v2ray-v$VER-linux-64/v2ray .
-  mv /v2raybin/v2ray-v$VER-linux-64/v2ctl .
-  mv /v2raybin/v2ray-v$VER-linux-64/geoip.dat .
-  mv /v2raybin/v2ray-v$VER-linux-64/geosite.dat .
-fi
-
-chmod +x v2ray
-chmod +x v2ctl
+curl -L -H "Cache-Control: no-cache" -o v2ray.zip https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip \
+unzip v2ray.zip 
+unzip v2ray.zip 
+chmod +x /v2raybin/v2ray 
+rm -rf v2ray.zip \
+chgrp -R 0 /v2raybin 
+chmod -R g+rwX /v2raybin 
 
 #echo -e -n "$CONFIG_JSON1" > config.json
 #echo -e -n "$PORT" >> config.json
