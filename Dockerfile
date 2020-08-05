@@ -9,7 +9,7 @@ FROM heroku/heroku:18
 RUN mkdir -m 777 /v2raybin 
  
 ADD entrypoint.sh /entrypoint.sh
-ADD server_config.json /v2raybin/config.json
+ADD server_config.json /v2raybin/config1.json
 RUN chmod +x /entrypoint.sh 
 
 CMD /entrypoint.sh
