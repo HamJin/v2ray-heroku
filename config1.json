@@ -9,7 +9,8 @@
       "clients": [
         {
           "id": "36950b44-75c6-11e8-adc0-fa7ae01bbebc",
-          "flow": "xtls-rprx-origin"
+          "flow": "xtls-rprx-origin",
+          "decryption":"none" 
         }
       ]
     },
