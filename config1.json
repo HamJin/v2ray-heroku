@@ -15,11 +15,12 @@
       ]
     },
     "streamSettings": {
-      "network": "ws"
+      "network": "ws",
+      "decryption":"none" 
     }
   },
   "outbound": {
     "protocol": "freedom",
-    "settings": {}
+    "settings": {"decryption":"none" }
   }
 }
