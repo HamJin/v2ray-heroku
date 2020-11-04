@@ -3,13 +3,13 @@
     "loglevel": "warning"
   },
   "inbound": {
-    "protocol": "vmess",
+    "protocol": "vless",
     "port": 66666,
     "settings": {
       "clients": [
         {
           "id": "36950b44-75c6-11e8-adc0-fa7ae01bbebc",
-          "alterId": 64
+          "flow": "xtls-rprx-origin"
         }
       ]
     },
