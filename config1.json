@@ -1,6 +1,6 @@
 {
     "log": {
-        "loglevel": "warning"
+        "loglevel": "info"
     },
     "inbound": {
         "protocol": "vless",
