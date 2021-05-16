@@ -8,7 +8,9 @@
         "settings": {
             "clients": [
                 {
-                    "id": "36950b44-75c6-11e8-adc0-fa7ae01bbebc"
+                    "id": "36950b44-75c6-11e8-adc0-fa7ae01bbebc",
+                    "level": 0,
+                    "email": "love@v2fly.org"
                 }
             ],
             "decryption": "none"
